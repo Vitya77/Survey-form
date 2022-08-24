@@ -6,7 +6,7 @@ body {
 }
 main {
   width: 50%;
-  margin: 0 auto 0 auto;
+  margin: 0 auto;
 }
 #title-container{
   margin: 50px 0 50px 0;
@@ -63,4 +63,9 @@ textarea {
 #submit:hover {
   box-shadow: 0 0 10px #37af65;
   transition: 0.5s;
+}
+@media (max-width:800px) {
+  main {
+    width: 90%;
+  }
 }
