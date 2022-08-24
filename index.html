@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" {IF CLASSES}class="classes"{/IF}>
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex">
+
+  <title>Online survey-form</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+<header>
+</header>
+<main>
+  <div id='title-container'>
+    <h1 id='title'>Online-store survey form</h1>
+    <p id='description'><em>Thank you for taking the time to help us improve the service</em></p>
+  </div>
+  <form id='survey-form' action='#'>
+    <fieldset>
+      <legend>Leave your response</legend>
+      
+      <div class='input-container'>
+      <label for='name' id='name-label'>Name</label><br>
+      <input id='name' type='text' name='name' placeholder='Enter your name' required><br>
+      </div>
+      
+      <div class='input-container'>
+      <label for='email' id='email-label'>Email</label><br>
+      <input id='email' type='email' name='email' placeholder='Enter your email' required><br>
+      </div>
+        
+      <div class='input-container'>
+      <label for='number' id='number-label'>Age</label><br>
+      <input id='number' type='number' name='age' placeholder='Enter your age' min='6' max='100'><br>
+      </div>
+        
+      <div class='input-container'>
+      <label id='select-label' for='dropdown'>Why are you here?</label><br>
+      <select form='syrvey-form' id='dropdown' name='select'>
+        <option disabled selected>Select the reason</option>
+        <option value='value1'>I want to compliment the service</option>
+        <option value='value2'>I want to give an advice</option>
+        <option value='value3'>I want to complain about the service</option>
+      </select><br>
+      </div>
+        
+      <div class='input-container'>
+      <label>What should we improve?</label><br>
+      
+      <input type='checkbox' name='design' value='value1' id='design'>
+      <label for='design' class='smaller-label'>Design of our site</label><br>
+      <input type='checkbox' name='technic' value='value2' id='technic'>
+      <label for='technic' class='smaller-label'>Some techical issues</label><br>
+      <input type='checkbox' name='stock' value='value3' id='stock'>
+      <label for='stock' class='smaller-label'>Our stock</label><br>
+      </div>
+        
+      <div class='input-container'>
+      <label>Would you recommend our store to a friend?</label><br>
+      
+      <input type='radio' name='radio' id='definitely' value='value1'>
+      <label for='definitely' class='smaller-label'>Definitely</label><br>
+      <input type='radio' name='radio' id='maybe' value='value2'>
+      <label for='maybe' class='smaller-label'>Maybe</label><br>
+      <input type='radio' name='radio' id='notsure' value='value3'>
+      <label for='notsure' class='smaller-label'>Not sure</label><br>
+      </div>
+        
+      <div class='input-container'>
+      <label for='comments'>Any comments or suggestions?</label><br>
+      <textarea id='comments' placeholder='Enter your comment here...'></textarea><br>
+      </div>
+        
+      <div class='input-container'>
+      <button type='submit' id='submit'>Submit</button>
+      </div>
+    </fieldset>
+  </form>
+</main>
+<footer>
+</footer>
+</body>
+
+</html>
